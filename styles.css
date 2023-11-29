@@ -484,11 +484,12 @@ button {
 
   h3.comercial {
     background-color: var(--color-blanco);
-    padding: 10px;
+    padding: 10px; 
     text-align: center;
   }
 
   .video {
+    padding: 25px;
     width: 38rem;
     height: auto;
   }
