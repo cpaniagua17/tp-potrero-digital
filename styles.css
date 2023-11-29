@@ -20,7 +20,7 @@ body {
   color: var(--color-gris);
 }
 .body-servicios {
-  background-color: #f7c7ce ;
+  background-color: var(--color-violeta);
 }
 
 h2,
