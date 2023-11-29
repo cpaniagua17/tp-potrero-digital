@@ -1,0 +1,495 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de colores */
+:root {
+  --color-violeta: #904C77;
+  --color-coral: #F59CA9;
+  --color-blanco: #F8F8F8;
+  --color-negro: #1D1E18;
+  --color-gris: #7f807d;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', serif;
+  color: var(--color-gris);
+}
+.body-servicios {
+  background-color: var(--color-violeta);
+}
+
+h2,
+h3,
+h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Encabezado */
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-coral);
+  color: var(--color-negro);
+}
+
+.nav-item {
+  text-align: center;
+}
+
+/* Enlaces */
+a {
+  font-size: medium;
+  color: var(--color-negro);
+}
+
+/* Contenedor principal */
+.container-fluid {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Títulos principales */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Carrusel */
+.carousel-item {
+  width: 100%;
+  height: 80%;
+}
+
+h5.slider {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-blanco);
+}
+
+/* Listas de consejos */
+.tips-lista {
+  font-size: 0.8rem;
+  color: var(--color-negro);
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+}
+
+/* Acerca de */
+.acerca {
+  font-size: 1.1rem;
+  color: var(--color-negro);
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  background-color: var(--color-blanco);
+}
+
+h3.comercial {
+  background-color: var(--color-blanco);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+/* Pie de página */
+.footer-container {
+  width: 100%;
+  height: 15vh;
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-coral);
+  color: var(--color-negro);
+
+  padding: 10px;
+}
+.redes,
+.derechos {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Estilos para la sección de servicios */
+#servicios-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  color: var(--color-negro);
+}
+.titulo {
+  font-family: 'Montserrat', serif;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-negro);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--color-blanco);
+}
+
+/* Tarjetas de servicios */
+.card {
+  max-width: 300px;
+  height: 450px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: var(--color-negro);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-texto {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-imagen {
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 20px;
+  background-color: aliceblue;
+  color: var(--color-negro);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+
+.button-link {
+  text-decoration: none;
+  width: 100%;
+
+}
+
+.button-link button {
+  width: 100%;
+  padding: 10px;
+  color: var(--color-negro);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+
+  text-align: center;
+}
+
+/* Formulario de contacto */
+.form-body {
+  width: 100%;
+  background-color: #904C77;
+
+}
+
+.form-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F59CA9;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+form,
+h2,
+p,
+label,
+input,
+textarea,
+button {
+  font-weight: 700;
+  text-align: center;
+  padding: 5px;
+  color: var(--color-negro);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+/* Media query para pantallas de 760px a 1024px */
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+
+  /* Header */
+  header {
+    padding: 5px;
+  }
+
+  /* Navbar */
+  .navbar-collapse {
+    padding: 5px;
+    text-align: center;
+  }
+
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Carousel Styles */
+  #carouselExampleCaptions {
+    width: 100%;
+    height: auto;
+  }
+
+  .d-block.w-100 {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-caption p.slider {
+    font-size: 1.4rem;
+  }
+
+  .acerca {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .acerca h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    padding: 15px;
+  }
+
+  .tips-lista {
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  /*estilos del footer*/
+  footer {
+    height: 10vh;
+    color: var(--color-negro);
+  }
+
+  .redes {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    color: var(--color-negro);
+  }
+
+  /* tratamientos Styles */
+  #servicios-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .titulo {
+    font-family: 'Montserrat', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-negro);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+  }
+
+  /*estilos de los enlaces*/
+  .center-container {
+    width: 100%;
+    display: flex;
+    color: var(--color-blanco);
+    text-align: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .button-link button {
+    padding: 10px;
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* Formulario Styles */
+  .form-container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-coral);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+
+  form,
+  h2,
+  p,
+  label,
+  input,
+  textarea,
+  button {
+    font-family: 'Montserrat', serif;
+    text-align: center;
+  }
+
+  h3.comercial {
+    background-color: var(--color-blanco);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query para pantallas de 1024px en adelante */
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p.slider {
+    font-size: 1.5rem;
+  }
+
+  .tips-lista {
+    font-size: 1.2rem;
+  }
+
+  .acerca {
+    font-size: 1.2rem;
+    padding: 15px;
+    color: var(--color-negro);
+  }
+
+  footer {
+    height: 15vh;
+  }
+
+  /*servicios Styles*/
+  .titulo {
+    font-family: 'Montserrat', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-negro);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+  }
+
+  /*formulario Styles*/
+  .form-container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-coral);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+
+  form,
+  h2,
+  p,
+  label,
+  input,
+  textarea,
+  button {
+    font-family: 'Montserrat', serif;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .button-link {
+    text-decoration: none;
+
+  }
+
+  .d-block.w-100 {
+    width: 100%;
+    height: auto;
+
+  }
+
+  h3.comercial {
+    background-color: var(--color-blanco);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .video {
+    width: 38rem;
+    height: auto;
+  }
+}
